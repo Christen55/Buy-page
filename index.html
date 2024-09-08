@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <script src="js.js" defer></script>
+    <div id="bg">
+        <div>
+            <div id="continue" class="text">Shopping continue</div>
+            <hr>
+            <div id="cart" class="text">Shopping cart</div>
+            <div id ="chosenItems" class="youritems">You have 3 item in your cart</div>
+
+            <div id="1" class="meal"> <img src="https://s3-alpha-sig.figma.com/img/f7d7/1dcb/f2d8a1f106b1613a422672f1faaf6f19?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jm1xJsKMkTV0sCF1W-RCR2uv-IPeoo0DLMQg5DokfDgZXw0YKyszJz-rg74qKkyxwvLJe5SbENGNzaXwuGkhu1L9dEHH1lm-g4gHw6sDCnW0m9-~XXeHzxPtsqDbBCn4KQb9rJfpjfJccB3Uibz9pMkpKjAVg3WLluPx86kKeCgAkMlEP8fLMgM~lDsXk~w1iM5Cd0bTdWr-CqGy1UxuUf-sWh9IFjmws81gbz9FWWAh1U9ODtAUNWoWKs8O5VKqiO4ksa~8-NVPquVP4DF-Ns21oaIy9Z6hcgv~Bz4A4pwNHxJThvlltxAMYq2gQBXx4AJoPuoOYKOQMDVpsGgU1Q__" class="image" alt="Italy Pizza">
+                <div>
+                    <div id="pizza" class="titleMeal text">Italy pizza</div>
+                    <div class = "mealDescription youritems">Extra cheese and toping</div>
+                </div>
+            
+                <div id="number1">1 </div>
+                <div class="arrays">
+                    <button class = "up" onclick="increaseNumber('number1')"></button>
+                    <button class = "down" onclick="decreaseNumber('number1')"></button>
+                </div>
+                <div id="price1" class="price">$681</div>
+                <img src="https://s3-alpha-sig.figma.com/img/7af9/e5a0/edee039aa8eafa44db7ddf8306eac4b5?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gaCh9x-nfMeMrracmA29BB30cBH71NQ3AE6LY9gtA7WFz~leRUPPOqtzjXSahd3KWMVaVpehAzC~aZmfM7GVHcBtvhvJhqAmfbFXZqqSkK6HnXIuDb3qX6-2TvFI3tQPAnVgOdwYbfab0dnEPsUB1Ruyx3jKM0E-wyonhAcYxOPOmMQtYXHkdt3H74OAkscBwzQiL4DGrOcRoZ~idp6SqrAAaU616N~cRh67r93f5CECYmtqj3N6-xYKnob4WJkx0Mad1sTTKjI~B1yajzCSAG22WZMVPj2QEFFnZ8dMvgLRsVxj4ycJ5xq8oSqlUPcDFckQ4cZEQ-ZidRZOkO~gyQ__" class="trash" onclick="summ('price1')" alt="Buy"></button>
+            
+            </div>
+
+            <div id="2" class="meal"> <img src="https://s3-alpha-sig.figma.com/img/a646/ff71/8760850495f2055df3205287002c688d?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QGax1xsA06KCn2i4TVKlIplb-HQSgwGU-9mpTNWG9zSzTEw9ZCfaxfXivFeahWDSAOgNs3BKeIJa4H0F3Amh0OaK1XvWM5nrFWyZb812Ij8uTpEyEDeTldehHJRnZPNP6v-xZ~k8WxsFZpBfi8RenZykZUO~VtvZ~C3GpcnPNFtgHcgrKYokBgBon-lxGRsFhbsN3ggrcDaz1BIBUFbHh4aj6MNCg2erp6ULDTkywlpQU~JQ~AAbcPFdOnYCyefOox8ggHKmRgtFIJFVVCHiqXkpnzmv8ka8UPGwOrCehS2yBzvzhPPG0mQmHvLRloj2WQLMcm2LRQOwAR3e1NUONw__" class="image" alt="Combo Plate">
+                <div>
+                    <div class="titleMeal text">Combo Plate</div>
+                    <div class = "mealDescription youritems">Extra cheese and toping</div>
+                </div>
+            
+                <div id="number2">1 </div>
+                <div class="arrays">
+                    <button class = "up" onclick="increaseNumber('number2')"></button>
+                    <button class = "down" onclick="decreaseNumber('number2')"></button>
+                </div>
+                <div id="price2" class="price">$681</div>
+                <img src="https://s3-alpha-sig.figma.com/img/7af9/e5a0/edee039aa8eafa44db7ddf8306eac4b5?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gaCh9x-nfMeMrracmA29BB30cBH71NQ3AE6LY9gtA7WFz~leRUPPOqtzjXSahd3KWMVaVpehAzC~aZmfM7GVHcBtvhvJhqAmfbFXZqqSkK6HnXIuDb3qX6-2TvFI3tQPAnVgOdwYbfab0dnEPsUB1Ruyx3jKM0E-wyonhAcYxOPOmMQtYXHkdt3H74OAkscBwzQiL4DGrOcRoZ~idp6SqrAAaU616N~cRh67r93f5CECYmtqj3N6-xYKnob4WJkx0Mad1sTTKjI~B1yajzCSAG22WZMVPj2QEFFnZ8dMvgLRsVxj4ycJ5xq8oSqlUPcDFckQ4cZEQ-ZidRZOkO~gyQ__" class="trash" id='combo'  onclick="summ('price2')" alt="Buy">
+            
+            </div>
+        
+            <div id="3" class="meal"> <img src="https://s3-alpha-sig.figma.com/img/8996/dde9/a211a003d60b2597e2fff5076f6510d9?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EqbGKdodbRueb4GruPwtfHdtG-oiBdt61s8kPmpo9V56-QBbolAYt7bAy7GPIEpJ8C6fmCXuhX8PpUmOc2QuJUqzcPybHZUYxvOS154xcl8BF3grQB282oE7FwNJ6RjpbWKbwfBBaYEHJ6T3M5VxR~lwRsWHWqjxHf3ZUAGvAnlZNkG17Aco-85yCXEzw0XkFe83CivSoZ0rJIuRf~sj24tc4ZgrVyeEFHOnmi79v5~jLP3EE~xJmHpkHoeST4JBECIhVp3~oQYEZVYdCsZKe0eoRRlkE84--WpW40LuiOlAApmVgk3rq0bwBhj77pWEsxeU953Yo2GTI1XLo2l-lg__" class="image" alt="Spanish Rice">
+                <div>
+                    <div id="rice" class="titleMeal text">Spanish rice</div>
+                    <div class = "mealDescription youritems">Extra garlic</div>
+                </div>
+            
+                <div id="number3">1 </div>
+                <div class="arrays">
+                    <button class = "up" onclick="increaseNumber('number3')"></button>
+                    <button class = "down" onclick="decreaseNumber('number3')"></button>
+                </div>
+                <div id="price3" class="price">$681</div>
+                <img src="https://s3-alpha-sig.figma.com/img/7af9/e5a0/edee039aa8eafa44db7ddf8306eac4b5?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gaCh9x-nfMeMrracmA29BB30cBH71NQ3AE6LY9gtA7WFz~leRUPPOqtzjXSahd3KWMVaVpehAzC~aZmfM7GVHcBtvhvJhqAmfbFXZqqSkK6HnXIuDb3qX6-2TvFI3tQPAnVgOdwYbfab0dnEPsUB1Ruyx3jKM0E-wyonhAcYxOPOmMQtYXHkdt3H74OAkscBwzQiL4DGrOcRoZ~idp6SqrAAaU616N~cRh67r93f5CECYmtqj3N6-xYKnob4WJkx0Mad1sTTKjI~B1yajzCSAG22WZMVPj2QEFFnZ8dMvgLRsVxj4ycJ5xq8oSqlUPcDFckQ4cZEQ-ZidRZOkO~gyQ__" class="trash" onclick="summ('price3')" alt="Buy">
+            
+            </div>
+        
+        </div>
+
+        <div class="creditcart">
+            <div class="creditDetails">
+                <div class="details">Card Details</div>
+                <img src="https://s3-alpha-sig.figma.com/img/e328/8c96/e6e92ecd0a4e3d8eae3e4490ce9ce877?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p~Kl5DhDnWGyz5reL-dHjJs-~caAEQIM7LW-uWrlW-jpUCSxXFYbUoP9eijNL70t8e1LvDvkX8rR--saBsn8ZzDi6UeQnpu7tFX3ZoR3V8N0SkFYzeEkjnv67GEO9Tzhrag3aAf6vE4Qm2KRB0WEGfbKWgLMlbxWp6IEss8xZEpq-wG7X4Vwp7ulrQBtWZ3VW2gqPXVGDKv9ixyyyhLu3p5DBqdcwK0Fdt5Ayw~41yP3fI32G0bYr24qYR4earCXdk1peuMKZ~C8k5MMYlLZEZrCNEnpEcnuTPS8Q41Uf2Oo3X5W2ZI~QeFOyfXa8q8Mp21mmDEV9UG9HDof4ZpbXg__" class="photo" alt="Photo">    
+            </div>
+            <div class="cardType">Card type</div>
+
+            <div class="visas">
+                <div class="visa">
+                    <img src="https://s3-alpha-sig.figma.com/img/c3cb/5c55/448c44afe9329d1c8b9991900d354244?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TOOQ3N5B9rzP5K4svoajGE-auesIX93YsEO3wEuyU3zGZVzjjhKU~ltly8f99cB-KkiRHV4KSwp50NhAYI6ASWiarCpL0e0StyAEF5XAaroNcKFwot9NfMOlEbXwfUT01Ra0B8E2ly18FWSMs4LJNI1RZ~q2fvHfIhGOH-yZpmullgBaJh8XR5NIsFNUxLIgT~xiEnOFJ9IoTXZlRLilXAs5~FgZNjts07umngS7YKhG58zx5PdUMItQSWhXQau1LYISEM~Kt-bYbvgxytCVUSuMXo~CSVgdtHPohVvDuT2vSOv4oh4d-2b~gDofWzcqIR1h11fazLfV1-eThjsOTg__" class="creditCardType" alt="MasterCard">
+                </div>
+    
+                <div class="visa">
+                    <img src="https://s3-alpha-sig.figma.com/img/7de6/1cab/42ca064544385ad78a91fcb69b618032?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aMCck4ZSQG0Ds0Hi9EfMK5EXWkUQ0WfmWXarM9jPnjHw3d4bDpR22dBes2X3UvJLlrtQFq5PBWWyt67IWQDZzPQ7PgJqItdel4pe1b97tCygWDT2NtDbxm-KzimWSU~o~bUuwRXqDSIGT8vxw7EgS7VTIluBUcblXZbpS1AMkzOg2gpOowLmhoxcv9nJIuD-xgkX7bUZIXr5SKDkX6KRAVlBw8qOBfIsl-AfxGBA1Gr94rVb6Vv9wb1AJJlfwErIfkiTVIjq4vIQb7FUJhwhTXlWEWI9qa7nsRFduX-G0WMvAQxRDv3MXvt9k2rzEaW2j8obOpRDthyCjeqSV0kvSQ__" class="creditCardType" alt="Visa">
+                </div>
+    
+                <div class="visa">
+                    <img src="https://s3-alpha-sig.figma.com/img/e9a6/9168/376c70de6e59a34ca84e63220b45eb73?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FSnsxa0Bdfslc1~op7UYkMBQLmZBF3ivrPssT0MFbQ3NE-lF9dvcy2Y0Ppy2buTaulPOsiga7h~haCLPY~~zhPdSbqyO0FR4-jP6BGjjPQ-F1enXo2bRTrEQVB-q4iI3DTs6nIoi651UU9bx1QXsYy0EuLbk6PycObJK5dNOF9ZbHEGX1pKr0o6rQWgEU4Qtk-Nt71pKOfe9deRs6ZBefTmbC6B9QUBnzyCXK7d~wO9VSregqJwjyFDywWvPtsMYAeQ1cRQJ0SfGGjyIChb7toM~e8fegYVKLWsfGB6I15MFy6xTF5gcTxFBc2Hjer80Yy2aOozJuEj1nvrlsCPfzQ__" class="creditCardType" alt="RuPay">
+                </div>
+
+                <div class="visa creditCardType all" onclick="openPopup()">
+                    See all
+                </div>
+
+
+            </div>
+
+            <div class="popup">
+                <span class="close-popup" onclick="closePopup()">&times;</span>
+                <img src="https://s3-alpha-sig.figma.com/img/c3cb/5c55/448c44afe9329d1c8b9991900d354244?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TOOQ3N5B9rzP5K4svoajGE-auesIX93YsEO3wEuyU3zGZVzjjhKU~ltly8f99cB-KkiRHV4KSwp50NhAYI6ASWiarCpL0e0StyAEF5XAaroNcKFwot9NfMOlEbXwfUT01Ra0B8E2ly18FWSMs4LJNI1RZ~q2fvHfIhGOH-yZpmullgBaJh8XR5NIsFNUxLIgT~xiEnOFJ9IoTXZlRLilXAs5~FgZNjts07umngS7YKhG58zx5PdUMItQSWhXQau1LYISEM~Kt-bYbvgxytCVUSuMXo~CSVgdtHPohVvDuT2vSOv4oh4d-2b~gDofWzcqIR1h11fazLfV1-eThjsOTg__" class="creditCardType" alt="MasterCard">
+                <img src="https://s3-alpha-sig.figma.com/img/7de6/1cab/42ca064544385ad78a91fcb69b618032?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aMCck4ZSQG0Ds0Hi9EfMK5EXWkUQ0WfmWXarM9jPnjHw3d4bDpR22dBes2X3UvJLlrtQFq5PBWWyt67IWQDZzPQ7PgJqItdel4pe1b97tCygWDT2NtDbxm-KzimWSU~o~bUuwRXqDSIGT8vxw7EgS7VTIluBUcblXZbpS1AMkzOg2gpOowLmhoxcv9nJIuD-xgkX7bUZIXr5SKDkX6KRAVlBw8qOBfIsl-AfxGBA1Gr94rVb6Vv9wb1AJJlfwErIfkiTVIjq4vIQb7FUJhwhTXlWEWI9qa7nsRFduX-G0WMvAQxRDv3MXvt9k2rzEaW2j8obOpRDthyCjeqSV0kvSQ__" class="creditCardType" alt="Visa">
+                <img src="https://s3-alpha-sig.figma.com/img/e9a6/9168/376c70de6e59a34ca84e63220b45eb73?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FSnsxa0Bdfslc1~op7UYkMBQLmZBF3ivrPssT0MFbQ3NE-lF9dvcy2Y0Ppy2buTaulPOsiga7h~haCLPY~~zhPdSbqyO0FR4-jP6BGjjPQ-F1enXo2bRTrEQVB-q4iI3DTs6nIoi651UU9bx1QXsYy0EuLbk6PycObJK5dNOF9ZbHEGX1pKr0o6rQWgEU4Qtk-Nt71pKOfe9deRs6ZBefTmbC6B9QUBnzyCXK7d~wO9VSregqJwjyFDywWvPtsMYAeQ1cRQJ0SfGGjyIChb7toM~e8fegYVKLWsfGB6I15MFy6xTF5gcTxFBc2Hjer80Yy2aOozJuEj1nvrlsCPfzQ__" class="creditCardType" alt="RuPay">
+                <img src="https://unionpay-karta.ru/wp-content/uploads/2023/01/cropped-UnionPay-logo-2048x1152-1.png" class="creditCardType" alt="UnionPay">
+                <div class="creditCardType"><img src="/home/christine/repos/shopping part/pngwing.com.png" style="width: 75px;" alt="Мир"></div>
+            </div>
+
+            
+
+            <div class="cardDetails name">Name on card</div>
+            <input type="text" class="holderName Holder" placeholder="Name" required>
+
+            <div class="cardDetails numberCard">Card Number</div>
+            <input id="cardNumber" type="text" class="holderName Holder" placeholder="1111 2222 3333 4444" required>
+
+
+            <div  class="numberCard dateCVV">
+                <div class="Expiration">
+                    <div class="cardDetails">Expiration date</div>
+                    <input id="date" type="monthYear" class="CVV Holder" placeholder="mm/yy" required>
+                </div>
+                
+                <div class="CVVHolder">
+                    <div class="cardDetails">CVV</div>
+                    <input id="CVV" type="text" class="CVV Holder" placeholder="123" required>
+                </div>
+
+            </div>
+
+            <hr class="line">
+
+            <div class="sum">
+                <div class="cardDetails subtotal">Subtotal</div>
+                <div id="subtotal" class="cardDetails subtotal tax">$0</div>
+            </div>
+
+            <div class="sum">
+                <div class="cardDetails shipping">Shipping</div>
+                <div id="tax" class="cardDetails shipping tax">$4</div>
+            </div>
+            
+            <div class="sum">
+                <div class="cardDetails shipping">Total(Tax incl.)</div>
+                <div id="total" class="cardDetails shipping tax">$0</div>
+            </div>
+
+            <div class="check">
+                <div class='checkout'>
+                    <div id="totalSum">$0</div>
+                    <div class="out">Checkout <img src="https://s3-alpha-sig.figma.com/img/990e/de34/614b620013d504d51cf403647af97471?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IYPEZuNDMep7OHK6kR3SotkvJJDxmCkhTrK9-tXvq08HimybzZvJXZLdsfggPAkSM5~-i3xXi1bWUikpGobTbPD1hL4bSxMKPzeBjkv4TFw-wyVcBQSPB1CoJyzxZSx2DJwOujxe~WQW91WQwnIF0xLDilX~JS4WkwOpNIqD1i2UIgpdcvPjnQWmBiUh00WOQc~BX6XT3wH18edfF1qpn2UkFTWUwNnMNBc8DqwCqRjouWm3spx-0wIS9nk6ljwuBn3N5QhxxOi4b~sCgihG8wYCSJ15~40BWODjDyiRPoWIFbdm-1bJmRJ4O1n8AgNdr9ee6N-dbqHYJE~7DB60lA__" class='arr'></div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+   
+
+
+<!--     
+    <style>
+      
+    
+        .image-container {
+          margin: 10px;
+        }
+    
+    
+        .see-all {
+          bottom: 10px;
+          left: 50%;
+          padding: 5px 10px;
+        }
+    
+        
+      </style> -->
+    
+    
+    
+</body>
+</html>
+
+
+
+  
+
