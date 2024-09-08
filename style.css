@@ -1,0 +1,427 @@
+body{
+    background-color: #1E90FF;
+    height: 744px;
+    width: 1133px;
+}
+
+#bg{
+    height: 744px;
+    width: 1133px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    font-family: Poppins, sans-serif;
+    padding-left: 45px;
+    padding-top: 51px;
+    display: flex;
+}
+
+.text{
+    height: 27px;
+    width: 190px;
+    font-size: 18px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#continue{
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+#cart{
+    margin-top: 21px;
+    font-weight: 500;
+}
+
+.youritems{
+    height: 19px;
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: Nunuito, sans-serif;
+    font-weight: 500;
+}
+
+
+#chosenItems{
+    width: 215px;
+    padding-top: -2px;
+}
+
+
+
+hr{
+    overflow: visible;
+    display: flex;
+    width: 605px;
+    border: 1.5px solid #D0CFCF;
+    margin-top: 23px;
+    background-color: #D0CFCF;
+    margin-left: 0px;
+}
+
+
+.line{
+    width: 350px;
+    border: 1px solid #5F65C3;
+    background-color: #5F65C3;
+    margin-top: 22.46px;
+}
+
+
+.meal{
+    height: 100px;
+    width: 608px;
+    margin-top: 29px;
+    border-radius: 15px;
+    box-shadow: 0 1px 4px 0 #00000025;
+    display: flex;
+
+}
+
+
+.image{
+    height:82.29px;
+    width: 80px;
+    margin-top: 9px;
+    margin-left: 10px;
+    display:inline-block; 
+    border-radius: 8px;
+    color: #D9D9D9;
+}
+
+
+.trash{
+    height:25px;
+    width: 25px;
+    margin-top: 37px;
+    margin-left: 38px;
+    display:inline-block;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.mealDescription{
+    width: 164px;
+    margin-top: 3px;
+    margin-left: 18px;
+}
+
+.titleMeal{
+    margin-top: 25px;
+    margin-left: 18px;
+    font-weight: 500;
+}
+
+#number1, #number2, #number3{
+    display: flex;
+    align-items: center;
+    width: 12px;
+    height: 20px;
+    margin-top: 40px;
+    margin-left: 82px;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: Raleway, sans-serif;
+}
+
+
+
+.arrays{ 
+    position: relative; 
+    display: inline-block; 
+    margin-top: 40px;
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+} 
+ 
+
+.up, .down { 
+    display: block; 
+    background-color: white; 
+    border: #FFFFFF;
+    text-decoration: none; 
+    position: relative; 
+    padding: 0;
+} 
+ 
+.up{
+    margin-top: 0px;
+}
+
+.down{
+    margin-top: 10px;
+
+}
+
+.up::before, .down::before{
+    content: ''; 
+    position: absolute; 
+    top: 100%;
+    border-top: 8.57px solid transparent; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top-color: black; 
+}
+
+
+.down::before { 
+    transform: translateX(0%); 
+} 
+ 
+
+
+
+.up::before { 
+    transform: translateX(10%); 
+    transform: rotate(180deg); 
+} 
+ 
+
+.price{
+    margin-top: 39px;
+    margin-left: 44px;
+    width: 60px;
+    height: 21px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #393939;
+}
+
+
+.creditcart{
+    width: 369px;
+    height: 644px;
+    margin-top: -1px;
+    margin-left: 55px;
+    border-radius: 20px;
+    background: #565ABB;
+    padding-left: 19px;
+    color: #FEFCFC;
+}
+
+
+.details{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 33px;
+    margin-top: 27px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+.photo{
+    width: 50px;
+    height: 50px;
+    margin-top: 19px;
+    margin-left: 150px;
+    border-radius: 8px;
+    background-color: #D9D9D9;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.creditDetails{
+    display: flex;
+}
+
+.cardType{
+    width: 94px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    
+    
+}
+
+
+.cardDetails{
+    width: 138px;
+    height: 21px;
+    font-weight: 500;
+    size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.div{
+    display: flex;
+}
+
+
+.numberCard{
+    margin-top: 14px;
+}
+
+.sum, .dateCVV{
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+}
+
+
+.Holder{
+    padding: 0px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 6px;
+    background-color: #6268C6;
+    padding-left: 18px;
+    border-width: 0px;
+    color: #FEFCFC;
+}
+
+.name{
+    margin-top: 27px;
+}
+
+.holderName{
+    width: 332px;
+}
+
+.CVV{
+    width: 153px;
+}
+
+input::placeholder{
+    color: #C4C4C4;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+
+.CVVHolder, .Expiration{
+    flex: 1;
+    width: 153px;
+}
+
+.CVVHolder{
+    margin-left: 8px;
+}
+
+.subtotal{
+    margin-top: 12.54px;
+}
+.shipping{
+    margin-top: 6px;
+}
+
+.tax{
+    display: flex;
+    justify-content: right;
+}
+
+.subtotal, .shipping, .tax{
+    flex: 1;
+}
+
+.check{
+    width: 350px;
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 26px;
+    background-color: #4DE1C1;
+    display: flex;
+}
+
+
+
+#totalSum, .checkout, .out{
+    height: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FEFCFC;
+}
+
+
+.checkout{
+    width: 306px;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+#totalSum{
+    width: 138px;
+    margin-left: 24px;
+}
+
+.creditCardType{
+    width: 75px;
+    height: 55px;
+    margin-top: 14px;
+    background-color: #D9D9D920;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: Open Sans, sans-serif ;
+    color: #FEFCFC;
+}
+
+
+
+.visa{
+    flex:1;
+    width: 75px;
+    height: 55px;
+}
+
+
+.arr{
+    width: 25px;
+    height: 25px;
+}
+
+
+.visas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    position: relative;
+}
+
+
+.all{
+   
+   
+    cursor: pointer;
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6b73e2;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+
+
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
